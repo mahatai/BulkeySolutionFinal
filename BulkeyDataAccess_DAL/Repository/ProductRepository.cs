@@ -40,7 +40,8 @@ namespace BulkeyDataAccess_DAL.Repository
 
         public async Task<List<Product>> GetAllAsync()
         {
-            return await _applicationDbContext.Products.ToListAsync();
+            return await _applicationDbContext.Products.Include(x=>x.Catagory).
+                ToListAsync();
         }
 
         public async Task<Product?> GetAsync(Guid id)

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkeyWEB", "Bulkey\BulkeyWEB.csproj", "{CB4188DE-5E93-41BB-8DF8-9004B04E3825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkeyWEB", "Bulkey\BulkeyWEB.csproj", "{CB4188DE-5E93-41BB-8DF8-9004B04E3825}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkeyDataAccess_DAL", "BulkeyDataAccess_DAL\BulkeyDataAccess_DAL.csproj", "{8391EAB8-CFB8-44DE-B90D-5D55BAD66F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkeyDataAccess_DAL", "BulkeyDataAccess_DAL\BulkeyDataAccess_DAL.csproj", "{8391EAB8-CFB8-44DE-B90D-5D55BAD66F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkeyModels", "BulkeyModels\BulkeyModels.csproj", "{7556590F-A310-4DF4-988D-430C10FF5536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkeyModels", "BulkeyModels\BulkeyModels.csproj", "{7556590F-A310-4DF4-988D-430C10FF5536}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
