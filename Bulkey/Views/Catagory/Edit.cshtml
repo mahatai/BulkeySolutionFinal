@@ -1,0 +1,28 @@
+﻿@model BulkeyModels.Models.ViewModels.EditCatagoryRequest
+
+<h1>Edit Catagory</h1>
+
+<div class="container py-5">
+    <form method="post">
+        <div class="mb-3 row p-1">
+            <label class="form-label">Catagory ID</label>
+            <input type="text" class="form-control" asp-for="ID" readonly />
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">Catagory Name</label>
+            <input type="text" class="form-control" asp-for="Name" required />
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label class="form-label">Display Order</label>
+            <input type="text" class="form-control" asp-for="DisplayOrder" required />
+        </div>
+        <div>
+            <span><button type="submit" class="btn btn-dark">Save</button></span>
+            <span>
+                <button type="submit" class="btn btn-danger" asp-controller="Catagory" asp-action="Delete">Delete</button>
+            </span>
+        </div>
+
+    </form>
+</div>

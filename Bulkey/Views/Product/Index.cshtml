@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BulkeyModels.Models.Domain.Product>
+
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>Product List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-primary" asp-controller="Product" asp-action="Create">
+                <i class="bi bi-bag-plus-fill"></i> Create New Product
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped py-5">
+    <thead>
+        <tr>
+            <td><b>Product ID</b></td>
+            <td><b>Title</b></td>
+            <td><b>Description</b></td>
+            <td><b>ISBN</b></td>
+            <td><b>Author</b></td>
+            <td><b>List Price</b></td>
+            <td><b>Price</b></td>
+            <td><b>Price50</b></td>
+            <td><b>Price100</b></td>
+            <td>   </td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.Description</td>
+                <td>@product.ISBN</td>
+                <td>@product.Author</td>
+                <td>@product.ListPrice</td>
+                <td>@product.Price</td>
+                <td>@product.Price50</td>
+                <td>@product.Price100</td>
+                <td>
+                    <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary mx-2">
+                        <i class="bi bi-pencil-square"></i>Edit
+                    </a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

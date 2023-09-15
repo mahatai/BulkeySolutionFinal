@@ -1,0 +1,59 @@
+﻿@model BulkeyModels.Models.ViewModels.AddProductRequest
+
+<h1>Create Product</h1>
+
+<div class="container py-5">
+    <form method="post">
+        <div class="mb-3 row p-1">
+            <label class="form-label">Product Title</label>
+            <input type="text" class="form-control" asp-for="Title" required />
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" asp-for="Description"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">ISBN</label>
+            <input type="text" class="form-control" asp-for="ISBN" required />
+            <span class="text-danger" asp-validation-for="ISBN"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">Author</label>
+            <input type="text" class="form-control" asp-for="Author" required />
+            <span class="text-danger" asp-validation-for="Author"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">List Price</label>
+            <input type="text" class="form-control" asp-for="ListPrice" required />
+            <span class="text-danger" asp-validation-for="ListPrice"></span>
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label class="form-label">Price</label>
+            <input type="text" class="form-control" asp-for="Price" required />
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">Price50</label>
+            <input type="text" class="form-control" asp-for="Price50" required />
+            <span class="text-danger" asp-validation-for="Price50"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">Price100</label>
+            <input type="text" class="form-control" asp-for="Price100" required />
+            <span class="text-danger" asp-validation-for="Price100"></span>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Create</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

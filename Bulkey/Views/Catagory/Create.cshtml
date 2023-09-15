@@ -1,0 +1,27 @@
+﻿@model BulkeyModels.Models.ViewModels.AddCatagoryRequest
+
+<h1>Create Catagory</h1>
+
+<div class="container py-5">
+    <form method="post">
+        <div class="mb-3 row p-1">
+            <label class="form-label">Catagory Name</label>
+            <input type="text" class="form-control" asp-for="Name" required />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label class="form-label">Display Order</label>
+            <input type="text" class="form-control" asp-for="DisplayOrder" required />
+            <span class="text-danger" asp-validation-for="DisplayOrder"></span>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn-dark">Create</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
