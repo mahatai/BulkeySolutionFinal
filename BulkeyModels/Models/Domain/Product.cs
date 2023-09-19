@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace BulkeyModels.Models.Domain
 {
@@ -39,6 +40,8 @@ namespace BulkeyModels.Models.Domain
 
         [ForeignKey("CatagoryId")]
         public Catagory Catagory { get; set; }
+        public string?ImageUrl { get; set; }
+        
     }
 }
 

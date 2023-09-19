@@ -16,7 +16,7 @@
 
         <div class="mb-3 row p-1">
             <label class="form-label">Description</label>
-            <textarea class="form-control" asp-for="Description"></textarea>
+            <textarea class="form-control" id="txtDescription" asp-for="Description"></textarea>
             <span class="text-danger" asp-validation-for="Description"></span>
         </div>
         <div class="mb-3 row p-1">
@@ -50,7 +50,17 @@
             <input type="text" class="form-control" asp-for="Price100" required />
             <span class="text-danger" asp-validation-for="Price100"></span>
         </div>
-
+      
+        <div class="mb-3 row p-1">
+            <label class="form-label">Product Image</label>
+            <input type="file" id="myFile" name="filename">
+            
+        </div>
+        <div class="mb-3 row p-1">
+            <label class="form-label">Catagory</label>
+            <select class="form-select" asp-items="@Model.Catagories" asp-for="SelectedCatagory">
+            </select>
+        </div>
         <div class="mb-3">
             <span><button type="submit" class="btn btn-dark">Save</button></span>
             <span><button type="submit" class="btn btn-danger" asp-controller="Product" asp-action="Delete">Delete</button></span>
@@ -61,4 +71,12 @@
 
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            new FroalaEditor('#txtDescription', {
+
+            })
+        })
+    </script>
 }

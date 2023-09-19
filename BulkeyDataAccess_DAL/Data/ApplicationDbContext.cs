@@ -54,7 +54,8 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 90,
                   Price50 = 85,
                   Price100 = 80,
-                  CatagoryId= Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279")
+                  CatagoryId = Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279"),
+                  ImageUrl = ""
 
               },
               new Product
@@ -68,7 +69,8 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 30,
                   Price50 = 25,
                   Price100 = 20,
-                  CatagoryId= Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279"),
+                  CatagoryId = Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279"),
+                  ImageUrl = ""
 
               },
               new Product
@@ -82,7 +84,8 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 50,
                   Price50 = 40,
                   Price100 = 35,
-                  CatagoryId= Guid.Parse("c81c000c-41c0-41b4-8c34-561bee24bea9")
+                  CatagoryId = Guid.Parse("c81c000c-41c0-41b4-8c34-561bee24bea9"),
+                  ImageUrl = ""
 
               },
               new Product
@@ -96,7 +99,8 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 65,
                   Price50 = 60,
                   Price100 = 55,
-                  CatagoryId = Guid.Parse("c81c000c-41c0-41b4-8c34-561bee24bea9")
+                  CatagoryId = Guid.Parse("c81c000c-41c0-41b4-8c34-561bee24bea9"),
+                  ImageUrl = ""
               },
               new Product
               {
@@ -109,7 +113,8 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 27,
                   Price50 = 25,
                   Price100 = 20,
-                  CatagoryId= Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279")
+                  CatagoryId = Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279"),
+                  ImageUrl = ""
 
               },
               new Product
@@ -123,9 +128,10 @@ namespace BulkeyDataAccess_DAL.Data
                   Price = 23,
                   Price50 = 22,
                   Price100 = 20,
-                 CatagoryId= Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279")
+                  CatagoryId = Guid.Parse("f36a0935-38b6-4721-86f1-d8eb43f45279"),
+                  ImageUrl = ""
               }
-              );
+              ) ;
         }
     }
 

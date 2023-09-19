@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BulkeyModels.Models.ViewModels
 {
@@ -31,6 +32,13 @@ namespace BulkeyModels.Models.ViewModels
         [Display(Name = "Price for 100+")]
         [Range(0, 1000)]
         public double Price100 { get; set; }
+        //CatagoriList
+        [Required(ErrorMessage ="Please select a Catagory")]
+        public IEnumerable<SelectListItem> Catagories { get; set; }
+        // Selected Catagory
+        [Required]
+        public string SelectedCatagory { get; set; } 
     }
 }
+
 
